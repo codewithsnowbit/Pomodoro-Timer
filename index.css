@@ -1,0 +1,31 @@
+
+.container{
+     margin-top: 40px; 
+     border: 1px solid #e6e0df;
+     box-shadow: 1px 1px #d6d1d0;
+}
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 10px; 
+}
+.note-title{
+    margin-left: 40px; 
+    margin-top: 30px;
+    font-weight: 900
+}
+.note-body{
+    font-weight: 600
+}
+.activity{
+    display: inline-flex;
+}
+.scrimba-course ul li a{
+    color: #0033d9;
+}
+.heading{
+    margin-top: 30px;
+}

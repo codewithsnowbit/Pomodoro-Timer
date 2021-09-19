@@ -1,0 +1,47 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/fe589eb6b3.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="startPlease();">
+        <div class="container">
+            <h1 class="text-center fw-bolder heading">Pomodoro Timer 🍅</h1><br>
+            <div class="timer card">
+                <p class="card-title" id="Timer">00:00</p>
+            </div><br/>
+            
+            
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="workStart()" id="workBtn">It's Work Time &nbsp; <i class="fas fa-play"></i></button>
+                <button class="btn btn-secondary" onclick="shortStart()" id="shortBtn" disabled> Short Break &nbsp; <i class="fas fa-coffee"></i></button> 
+                <button class="btn btn-secondary" onclick="longStart()" id="longBtn" disabled>Long Break &nbsp;<i class="fas fa-restroom"></i></button><hr>
+                <!-- <button class="btn btn-danger" onclick="stop()">Stop</button> -->
+                <div class="card">
+                    <h2 class="card-title note-title">Note: </h2>
+                    <div class="card-body note-body">
+                        <ul>
+                            <li>Work Time: 25 minutes ⌛</li>
+                            <li>Short Break: 5 minutes ⏱️</li>
+                            <li>Long Break: 10 minutes ⏱️</li>
+                            <li>Short Break and Long Break will not be used before work</li>
+                            <li>Stay focused with Pomodoro Timer 🍅</li>
+                            <li>Happy Coding!</li>
+                            <hr>
+                            <li><i>Pumpkin please don't eat the Pomodoro's</i> 😜</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>
