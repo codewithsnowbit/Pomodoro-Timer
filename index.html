@@ -10,13 +10,13 @@
     <body onload="startPlease();">
         <div class="container">
             <h1 class="text-center fw-bolder heading">Pomodoro Timer 🍅</h1><br>
-            <div class="timer card">
-                <p class="card-title" id="Timer">00:00</p>
+            <div class=" card">
+                <p class="card-title timer" id="Timer">00:00</p><hr>
+                <marquee><h3 class="card-text" id="accuracy"></h3></marquee>
             </div><br/>
             
-            
             <div class="buttons">
-                <button class="btn btn-primary" onclick="workStart()" id="workBtn">It's Work Time &nbsp; <i class="fas fa-play"></i></button>
+                <button class="btn btn-primary" onclick="workStart(); accuracy();" id="workBtn">It's Work Time &nbsp; <i class="fas fa-play"></i></button>
                 <button class="btn btn-secondary" onclick="shortStart()" id="shortBtn" disabled> Short Break &nbsp; <i class="fas fa-coffee"></i></button> 
                 <button class="btn btn-secondary" onclick="longStart()" id="longBtn" disabled>Long Break &nbsp;<i class="fas fa-restroom"></i></button><hr>
                 <!-- <button class="btn btn-danger" onclick="stop()">Stop</button> -->
@@ -24,7 +24,8 @@
                     <h2 class="card-title note-title">Note: </h2>
                     <div class="card-body note-body">
                         <ul>
-                            <li>Work Time: 25 minutes ⌛</li>
+                            <li><p class="text-danger">For now it is only 6 sec to find all the features</p></li>
+                            <li>Work Time: 25 minutes ⌛ </li>
                             <li>Short Break: 5 minutes ⏱️</li>
                             <li>Long Break: 10 minutes ⏱️</li>
                             <li>Short Break and Long Break will not be used before work</li>
@@ -42,5 +43,6 @@
             })
         </script>
         <script src="index.js"></script>
+
     </body>
 </html>

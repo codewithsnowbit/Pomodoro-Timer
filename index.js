@@ -80,7 +80,9 @@ function updateWork(){
         longBtn.disabled = false;
         const completedSound = new Audio('completedSound.mp3');
         completedSound.play();    
-        countdownEl.innerText = 'You have done a great job!'
+        countdownEl.innerText = `Good job!`;
+        let acText = document.getElementById('accuracy');
+        acText.innerText = `Cool! Great accuracy of ${score}% 🎉`;
         // document.title('Oh, I can\'t belive that - Big Smoke')
     }
 
@@ -145,7 +147,11 @@ function updateLong(){
     }
     
 }
-
+function randomNumber(min, max){
+    const r = Math.random()*(max-min) + min
+    return Math.floor(r)
+}
+let score = randomNumber(90, 100)
 // function stop(){
 //         clearInterval(interval_long)
 //         clearInterval(interval)
