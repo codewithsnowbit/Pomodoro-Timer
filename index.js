@@ -163,7 +163,7 @@ function coffee(){
     document.getElementById('coffee-counter').innerText = coffeeC;
     if(coffeeC == 5){
         document.getElementById('coffee-btn').disabled = true;
-        document.getElementById('coffee-btn').innerText = 'Enough! Coffee Drainer 🤣';
+        document.getElementById('coffee-btn').innerText = 'Enough! Coffee Drainer 🤣, that was 5th time';
     }
 }
 // function stop(){
