@@ -156,6 +156,16 @@ function randomNumber(min, max){
     return Math.floor(r)
 }
 let score = randomNumber(90, 100)
+let coffeeC = 0;
+
+function coffee(){
+    coffeeC++;
+    document.getElementById('coffee-counter').innerText = coffeeC;
+    if(coffeeC == 5){
+        document.getElementById('coffee-btn').disabled = true;
+        document.getElementById('coffee-btn').innerText = 'Lol! Coffee Drainer';
+    }
+}
 // function stop(){
 //         clearInterval(interval_long)
 //         clearInterval(interval)
