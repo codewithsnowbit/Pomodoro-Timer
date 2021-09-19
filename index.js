@@ -18,6 +18,8 @@ const countdownEl = document.getElementById('Timer');
 const workBtn = document.getElementById('workBtn');
 const shortBtn = document.getElementById('shortBtn');
 const longBtn = document.getElementById('longBtn');
+let acText = document.getElementById('accuracy');
+
 
 var interval, interval_short, interval_long, startIt, beepSound, beepSoundLong;
 
@@ -80,8 +82,7 @@ function updateWork(){
         longBtn.disabled = false;
         const completedSound = new Audio('completedSound.mp3');
         completedSound.play();    
-        countdownEl.innerText = `Good job!`;
-        let acText = document.getElementById('accuracy');
+        countdownEl.innerText = `Oh! I can't belive that`;
         acText.innerText = `Cool! Great accuracy of ${score}% 🎉`;
         // document.title('Oh, I can\'t belive that - Big Smoke')
     }
@@ -91,6 +92,7 @@ function updateWork(){
 function updateShort(){
     clearTimeout(startIt)    
     clearInterval(beepSoundLong)
+    acText.style.display = 'none';
     
     const minuteShort = Math.floor(time_break / 60);
     let secondsShort = time_break % 60;
@@ -120,7 +122,9 @@ function updateShort(){
 }
 function updateLong(){
     clearTimeout(startIt)    
-    clearInterval(beepSound)    
+    clearInterval(beepSound) 
+    acText.style.display = 'none';
+
     const minuteLong = Math.floor(time_break_long / 60);
     let secondsLong = time_break_long % 60;
     
