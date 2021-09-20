@@ -8,9 +8,9 @@
         <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
         <title>Pomodoro Timer 🍅</title>
     </head>
-    <body onload="startPlease();">
+    <body onload="startPlease(); typeWriter();">
         <div class="container">
-            <h1 class="text-center fw-bolder heading">Pomodoro Timer 🍅</h1><br>
+            <h1 class="text-center fw-bolder heading" id="type-heading"> </h1><br>
             <div class=" card">
                 <p class="card-title timer" id="Timer">00:00</p><hr>
                 <marquee><h3 class="card-text" id="accuracy"></h3></marquee>
