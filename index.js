@@ -2,13 +2,13 @@
 // Short Break : 5 minutes
 // Long Breal : 10 minutes
 
-let workTime = 0.1; // You can change it to 25, for now it is only 6 seconds to see all the features of the app
+let workTime = 25; // You can change it to 25, for now it is only 6 seconds to see all the features of the app
 let time = workTime * 60;
 
-let breakTimeShort = 0.1; // You can change it to 5, for now it is only 6 seconds to see all the features of the app
+let breakTimeShort = 5 // You can change it to 5, for now it is only 6 seconds to see all the features of the app
 let time_break = breakTimeShort * 60; // You can change it to 10, for now it is only 6 seconds to see all the features of the app
 
-let breakTimeLong = 0.1;
+let breakTimeLong = 10;
 let time_break_long = breakTimeLong * 60;
 let counter = 0;
 let counterShort = 0;
